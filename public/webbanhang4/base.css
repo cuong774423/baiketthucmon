@@ -1,0 +1,238 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+
+} 
+body{
+   background-color: antiquewhite; 
+}
+.signup-banner {
+  height: 300px;
+  width: 100%;
+  background-image: url(./image/bsn8.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+}
+.dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+} 
+.dark> span{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 133px 0 0 0;
+}
+.form-signup {
+  height: 450px;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+} 
+.form-signup h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 60px 0 40px 0;
+}
+.form-signup input{
+  width: 300px;
+  line-height: 2;
+  margin: 5px 0;
+  border: none;
+  padding: 5px;
+}
+.signup-item  button { 
+  width: 300px;
+  background-color: saddlebrown;
+  color: white;
+  margin: 5px 0;
+  border: none;
+  line-height: 2.5;
+  cursor: pointer;
+}
+.signup-item button:hover {
+  background-color: yellowgreen;
+  color: black;
+  font-weight: bold;
+}
+.signup-item a{
+ display: inline-block;
+ margin: 10px;
+ color:black;
+}
+.signup-item a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/*------------------------LIST GATEAUX--------------------------------------*/
+
+
+.content_gateaux{
+height: 100%;
+width: 100%;
+background-color: antiquewhite;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0 auto;
+}
+.container_gateaux{
+  display: flex;
+  justify-content: center;
+}
+.title h1{
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 60px 0;
+}
+.list_content {
+  height: 100%;
+  width: 280px;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.list_title {
+  background-color: brown;
+  padding: 20px 10px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+}
+.list_item{
+  padding: 15px 10px;
+}
+.list_item li a {
+  font-size: 14px;
+  line-height: 1.8;
+  color: black;
+  font-weight: bold;
+}
+.list_item>li a {
+  position: relative;
+}
+.list_item>li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.list_item >li  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.list_gateaux{
+  margin-top: -20px;
+  width: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap ;
+  text-transform: uppercase;
+}
+.gateaux1 {
+  height: 270px;
+  width: 180px;
+  background: white;
+  line-height: 1.4;
+  margin: 0 20px 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.gateaux1 > a  img {
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.name-gateaux  {
+  color: black;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.name-gateaux:hover {
+  color: yellowgreen;
+}
+.gateaux1 >span {
+  font-weight: normal;
+  display: block;
+}
+.price1 {
+  padding: 6px;
+  width: 100%;
+  background-color: yellowgreen;
+  font-size: 20px;
+  color:white;
+  border-radius: 0 0 10px 10px;
+  font-weight: bold;
+}
+.price1 > a {
+  color: saddlebrown;
+}
+.button_gateaux{
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: block;
+}
+.button_gateaux a button{
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  margin-left: 5px;
+  text-align: center;
+}
+.button_gateaux .button1 button{
+  background-color: saddlebrown;
+}
+.button_gateaux .button2 button:hover{
+  background-color: saddlebrown;
+}
+.button_gateaux .button2 button:hover{
+  transition: 0.5s;
+}
+.button_gateaux .button3 button:hover{
+  background-color: saddlebrown;
+}
+.button_gateaux .button3 button:hover{
+  transition: 0.5s;
+}
+.button_gateaux .button-3 button{
+  background-color: saddlebrown;
+}
+.button_gateaux .button-2 button:hover{
+  background-color: saddlebrown;
+}
+.button_gateaux .button-2 button:hover{
+  transition: 0.5s;
+}
+.button_gateaux .button-1 button:hover{
+  background-color: saddlebrown;
+}
+.button_gateaux .button-1 button:hover{
+  transition: 0.5s;
+}
