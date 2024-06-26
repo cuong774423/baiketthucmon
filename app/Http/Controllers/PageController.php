@@ -70,6 +70,7 @@ class PageController extends Controller
     
     public function postCheckout(Request $request){
     
+        
         $cart=Session::get('cart');
         $customer=new Customer();
         $customer->name=$request->input('name');
@@ -98,7 +99,7 @@ class PageController extends Controller
             $bill_detail->save();
         }
         Session::forget('cart');
-        
+        return redirect()->route('pages.index')->with('success', 'Đặt hàng thành công!');
     
     }
 
@@ -192,7 +193,7 @@ class PageController extends Controller
             ];
             Mail::to($email)->send(new \App\Mail\SendMail($sentData));
             Session::flash('message', 'Send email successfully!');
-            return view('login');  //về lại trang đăng nhập của khách
+            return view('pages.dangnhap');  //về lại trang đăng nhập của khách
         }
         else {
               return redirect()->route('getInputEmail')->with('message','Your email is not right');

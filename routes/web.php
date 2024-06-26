@@ -11,6 +11,9 @@ use App\Http\Controllers\AdminContactController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/contacts', function () {
+    return view('pages.contact');
+});
 Route::resource('categories', PageController::class);
 
 Route::resource('pages', PageController::class);
@@ -102,5 +105,5 @@ Route::prefix('admin')->group(function () {
  
     });
 });
-    Route::resource('contacts', AdminContactController::class);
+    Route::resource('contactss', AdminContactController::class);
             

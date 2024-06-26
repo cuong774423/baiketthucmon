@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="form-group">
                                      <label>Price</label>
-                                         <input type="text" class="form-control" name="price" placeholder="Enter product price">
+                                         <input type="text" class="form-control" name="unit_price" placeholder="Enter product price">
                                     </div>
 
                                     <div class="form-group">

@@ -18,7 +18,7 @@
                     </li>
                     <li><a href ="">Cách thức vận chuyển</a ></li>
                     <li><a href ="">Tin tức</a ></li>
-                    <li><a href ="{{url('/contact')}}">Liên hệ</a ></li>
+                    <li><a href ="{{url('/contacts')}}">Liên hệ</a ></li>
                 </div>
                 <div class="signup_signin">
                     @if(Auth::check())

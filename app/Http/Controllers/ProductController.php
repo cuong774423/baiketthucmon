@@ -30,7 +30,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required',
-            'price' => 'required|numeric|min:0', // Validate price
+            'unit_price' => 'required|numeric|min:0', // Validate price
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category_id' => 'required', // Validate category_id
         ]);
@@ -43,7 +43,7 @@ class ProductController extends Controller
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
-        $product->price = $request->input('price'); // Assign price
+        $product->unit_price = $request->input('unit_price'); // Assign price
         $product->image = $imageName; // Save the image file name
         $product->category_id = $request->input('category_id'); // Assign category_id
         $product->save();
